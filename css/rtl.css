@@ -1,0 +1,407 @@
+.aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .marhey {
+    font-family: "Marhey", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }  
+
+/* RTL Overrides */
+body {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Navbar RTL Fixes */
+.navbar-nav {
+  padding-right: 0;
+}
+
+/* Dropdown Menu RTL */
+.dropdown-menu {
+  text-align: right;
+  left: auto !important;
+  right: 0;
+  margin: 0.125rem 0 0;
+}
+
+/* Icons RTL */
+.ti-angle-down {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+/* Adjust margins for RTL */
+.me-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0 !important;
+}
+
+.ms-1 {
+  margin-right: 0.25rem !important;
+  margin-left: 0 !important;
+}
+
+/* Fix dropdown submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  left: auto;
+  margin-top: -1px;
+}
+
+/* Adjust padding for RTL */
+.navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* Fix dropdown arrow position */
+.dropdown-toggle::after {
+  margin-right: 0.255em;
+  margin-left: 0;
+}
+
+/* Fix navbar brand positioning */
+.navbar-brand {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+/* Fix navbar toggler icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Fix dropdown menu alignment */
+.dropdown-menu-end {
+  right: auto !important;
+  left: 0 !important;
+}
+
+/* Adjust navbar items spacing */
+.navbar-nav .nav-item {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+/* Fix dropdown items */
+.dropdown-item {
+  text-align: right;
+}
+
+/* Fix navbar collapse */
+.navbar-collapse {
+  padding-right: 1rem;
+}
+
+/* Fix navbar brand logo */
+.navbar-brand img {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* Testimonial Section RTL Fixes */
+.testimonial .testimonial-slider .owl-carousel {
+  direction: ltr;
+}
+
+.testimonial .testimonial-slider .owl-stage-outer {
+  direction: rtl;
+}
+
+.testimonial .testimonial-slider .owl-item {
+  float: right;
+}
+
+.testimonial .testimonial-slider .item .block {
+  text-align: right;
+  padding: 30px;
+}
+
+.testimonial .testimonial-slider .owl-nav {
+  direction: ltr;
+  text-align: left;
+}
+
+.testimonial .testimonial-slider .owl-dots {
+  text-align: center;
+  direction: ltr;
+}
+
+.testimonial .testimonial-slider .owl-nav button.owl-prev,
+.testimonial .testimonial-slider .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.testimonial .testimonial-slider .owl-nav button.owl-prev {
+  left: 0;
+  right: auto;
+}
+
+.testimonial .testimonial-slider .owl-nav button.owl-next {
+  right: 0;
+  left: auto;
+}
+
+/* Fix testimonial block alignment */
+.testimonial .testimonial-slider .item .block .image {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Footer Credits Styling */
+.footer-credits {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-credits::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 50%, #00f2fe 100%);
+  background-size: 200% auto;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.copyright-text {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #adb5bd;
+}
+
+.copyright-text i {
+  color: #4facfe;
+  font-size: 1rem;
+}
+
+.developer-credit {
+  font-size: 0.9rem;
+  color: #adb5bd;
+}
+
+.developer-link {
+  color: #4facfe;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.developer-link:hover {
+  color: #00f2fe;
+  transform: translateY(-1px);
+}
+
+.developer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  background-color: #00f2fe;
+  transition: width 0.3s ease;
+}
+
+.developer-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.developer-link i {
+  font-size: 0.7rem;
+  margin-right: 4px;
+  transition: transform 0.3s ease;
+}
+
+.developer-link:hover i {
+  transform: translateX(2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .copyright-text,
+  .developer-credit {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .developer-credit {
+    margin-top: 1rem;
+  }
+}
+
+/* Hero Section Button with Animation */
+.gradient-banner .btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5), 0 0 20px rgba(0, 123, 255, 0.3);
+  animation: pulse 2s infinite;
+  padding: 12px 30px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+.gradient-banner .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.gradient-banner .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.gradient-banner .btn-primary:hover::before {
+  left: 100%;
+}
+
+.gradient-banner .btn-primary .green-icon {
+  color: #28a745;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gradient-banner .btn-primary:hover .green-icon {
+  transform: translateX(5px);
+  filter: drop-shadow(0 0 5px rgba(40, 167, 69, 0.8));
+}
+
+.gradient-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.gradient-banner .btn {
+  position: relative;
+  z-index: 3;
+}
+
+.shapes-container {
+  pointer-events: none;
+}
+
+.shapes-container .shape {
+  pointer-events: none;
+}
+
+/* Fix owl-carousel RTL */
+.owl-carousel {
+  direction: ltr;
+}
+
+.owl-carousel .owl-stage-outer {
+  direction: rtl;
+}
+
+.owl-carousel .owl-item {
+  float: right;
+}
+
+/* Footer Logo */
+.footer-main .block {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin-bottom: 20px;
+}
+
+.footer-main .block img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Social Icons Spacing */
+.social-icon.list-inline {
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.social-icon .list-inline-item {
+  margin: 0 8px;
+}
+
+.social-icon .list-inline-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.social-icon .list-inline-item a:hover {
+  background: #2e7eed;
+  transform: translateY(-3px);
+}
